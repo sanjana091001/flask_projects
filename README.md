@@ -3,5 +3,5 @@ repo for flask projects
 
 
 to run flask app:
->>go to dir 
->> flask run
+go to dir 
+flask run

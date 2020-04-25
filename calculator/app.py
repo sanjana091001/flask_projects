@@ -19,8 +19,10 @@ def more():
         num3=num1-num2
     elif op=='multiplication':
         num3=num1*num2
-    else:
+    elif op=='division':
         num3=num1/num2
-    return render_template("index.html",headline=num3)
+    else:
+        num3=num1%num2
+    return render_template("index.html",answer=num3)
 
     

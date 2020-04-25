@@ -1,0 +1,20 @@
+ <html>
+     <body>
+        <p>calculator</p>
+        <form action="{{ url_for('more') }}" method="post">
+            <input type="number" name="number1" placeholder="enter number 1">
+            <button>Submit</button>
+            <input type="number" name="number2" placeholder="enter number 2">
+            <button>Submit</button>
+        <label for="operations">select an operation</label>
+        <select name="operations" id="operations">
+            <option value="addition">+</option>
+            <option value="subtraction">-</option>
+            <option value="multiplication">x</option>
+            <option value="division">/</option>
+          </select>
+        </form>
+        <p>the sum is</p>
+        <p>{{ headline }}</p>
+     </body>
+</html>

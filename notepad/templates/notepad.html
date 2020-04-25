@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Notepad</title>
+    </head>
+    <body>
+        <h1>Welcome to Notepad!</h1>
+        <ol>
+            {% for note in notes %}
+            <li>
+                {{ note }}
+            </li>
+            {% endfor %}
+        </ol>
+        <form action="{{ url_for('notepad') }}" method="post">
+            <input type="text" name="note" placeholder="Type notes here">
+            <button>add note</button>
+    </body>
+</html>
